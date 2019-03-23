@@ -7,6 +7,7 @@ char buffer[256];
 long sentMillis = 0;
 long currentMillis = 0;
 long interval = 15000;
+byte payload [];
 
 void setup() {
  /* Prepare M5STACK */
