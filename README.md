@@ -11,5 +11,5 @@ Buffer overflow in sprintf() was fixed.
 Used UART has to be configured in LoRaWan.cpp
 
 ToDo:
-- provide OTAA version example
+- debug OTAA version example (First transfer is possible after about 150s cause join is done in SF12; maybee FW related)
 
