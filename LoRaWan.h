@@ -36,7 +36,7 @@
 
 //#define SerialLoRa          Serial1
 
-//#define _DEBUG_SERIAL_      1
+#define _DEBUG_SERIAL_      1
 #define DEFAULT_TIMEOUT     5 // second
 #define DEFAULT_TIMEWAIT    100 // millisecond
 #define DEFAULT_DEBUGTIME   1 // second
