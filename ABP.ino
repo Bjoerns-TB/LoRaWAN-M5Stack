@@ -79,31 +79,7 @@ void sendobject(){
     
     if (result == true){
       Serial.println("Sent");
-      
-      short length;
-      short rssi;
-      float snr;
-      short gwcnt;
-
-      memset(buffer, 0, 256);
-      length = lora.receivePacket(buffer, 256, &rssi, &snr, &gwcnt);
-
-      Serial.print("Length is: ");
-      Serial.println(length);
-      Serial.print("RSSI is: ");
-      Serial.println(rssi);
-      Serial.print("SNR is: ");
-      Serial.println(snr);
-      Serial.print("Data is: ");
-      for(unsigned char i = 0; i < length; i ++)
-            {
-                Serial.print("0x");
-                Serial.print(buffer[i], HEX);
-                Serial.print(" ");
-            }
-      Serial.println();
-
-      
+ 
     }else {
       Serial.println("Error");
     }
