@@ -5,7 +5,8 @@ The lora.receivePacket function now also informs about the SNR.
 
 The lora.transferPacketLinkCheckReq function uses the LinkCheckReq MAC command to inform about the number of LoRaWAN gateways which received the request.
 
-A bug in the for loop within the lora.transferPacket functions which madde the loop run endlessly was fixed.
+A bug in the for loop within the lora.transferPacket functions which made the loop run endlessly was fixed.
+Buffer overflow in sprintf() was fixed.
 
 Used UART has to be configured in LoRaWan.cpp
 
