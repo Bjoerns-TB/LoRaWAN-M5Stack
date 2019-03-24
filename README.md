@@ -7,7 +7,7 @@ The lora.transferPacketLinkCheckReq function uses the LinkCheckReq MAC command t
 
 A bug in the for loop within the lora.transferPacket functions which madde the loop run endlessly was fixed.
 
-Used UART has to be configured ib LoRaWan.cpp
+Used UART has to be configured in LoRaWan.cpp
 
 ToDo:
 - provide OTAA version example
