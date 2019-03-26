@@ -66,6 +66,8 @@ void initlora() {
   lora.setPower(14);
   lora.setPort(1);
   lora.setAdaptiveDataRate(true);
+  //lora.setDutyCycle(false);
+  //lora.setJoinDutyCycle(false);
   while (!lora.setOTAAJoin(JOIN, 10));
 }
 
