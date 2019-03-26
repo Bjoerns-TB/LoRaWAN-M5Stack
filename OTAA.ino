@@ -61,12 +61,11 @@ void initlora() {
   lora.setChannel(7, 867.9);
 
   lora.setReceiceWindowFirst(0, 868.1);
-  lora.setReceiceWindowSecond(869.525, DR0);
+  lora.setReceiceWindowSecond(869.525, DR3);
 
   lora.setPower(14);
   lora.setPort(1);
   lora.setAdaptiveDataRate(true);
-  lora.setDutyCycle(false);
   while (!lora.setOTAAJoin(JOIN, 10));
 }
 
