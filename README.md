@@ -57,3 +57,8 @@ Buffer overflow in sprintf() was fixed.
 
 Used UART has to be configured in LoRaWan.cpp
 
+The RHF76-052 with Firmware 2.1.15 and 2.1.19 performs a JOIN with SF12. With lora.setDutyCycle(true); the modem will be blocked for about 150 seconds because of duty cycle limitations. So there are two possible Options:
+1. lora.setDutyCycle(false);
+   while (!lora.setOTAAJoin(JOIN, 10));
+2. while (!lora.setOTAAJoin(JOIN, 150));
+
