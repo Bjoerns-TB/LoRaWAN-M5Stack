@@ -3,8 +3,8 @@ LoRaWAN library for M5Stack LoRaWAN Module, based on the Seeeduino LoRaWAN libra
 
 The lora.receivePacket function now also informs about the SNR.
 
-result = lora.transferPacketWithConfirmed(coords, sizeof(coords), 5);
-
+    result = lora.transferPacketWithConfirmed(coords, sizeof(coords), 5);
+    
     if (result == true) {
       Seriel.println("ACK OK");
 
@@ -28,8 +28,8 @@ result = lora.transferPacketWithConfirmed(coords, sizeof(coords), 5);
 
 The lora.transferPacketLinkCheckReq function uses the LinkCheckReq MAC command to inform about the number of LoRaWAN gateways which received the request.
 
-result = lora.transferPacketLinkCheckReq(5);
-
+    result = lora.transferPacketLinkCheckReq(5);
+    
     if (result == true) {
       Seriel.println("LCR OK");
 
