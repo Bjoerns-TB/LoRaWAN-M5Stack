@@ -47,7 +47,7 @@ void initlora(){
   // setKey(char *NwkSKey, char *AppSKey, char *AppKey);
   lora.setKey("12345678901234567890", "12345678901234567890", NULL);
   
-  lora.setDeciveMode(LWABP);
+  lora.setDeviceMode(LWABP);
   lora.setDataRate(DR5, EU868);
   
   lora.setChannel(0, 868.1);
@@ -59,8 +59,8 @@ void initlora(){
 //  lora.setChannel(6, 867.7);
 //  lora.setChannel(7, 867.9);
   
-  lora.setReceiceWindowFirst(0, 868.1);
-  lora.setReceiceWindowSecond(869.525, DR3);
+  lora.setReceiveWindowFirst(0, 868.1);
+  lora.setReceiveWindowSecond(869.525, DR3);
   
   lora.setPower(14);
   lora.setPort(1);
