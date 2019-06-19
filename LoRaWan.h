@@ -298,7 +298,7 @@ class LoRaWanClass
          *  
          *  \return Return null
          */
-        void setDeciveMode(_device_mode_t mode);
+        void setDeviceMode(_device_mode_t mode);
         
         /**
          *  \brief Set device join a network
@@ -329,35 +329,35 @@ class LoRaWanClass
         void setConfirmedMessageRetryTime(unsigned char time);
         
         /**
-         *  \brief ON/OFF receice window 1
+         *  \brief ON/OFF receive window 1
          *  
          *  \param [in] command The true : ON, false OFF
          *  
          *  \return Return null
          */
-        void setReceiceWindowFirst(bool command);
+        void setReceiveWindowFirst(bool command);
         /**
-         *  \brief Set receice window 1 channel mapping
+         *  \brief Set receive window 1 channel mapping
          *  
          *  \param [in] channel The channel number, range from 0 to 71
          *  \param [in] frequency The frequency value of channel
          *  
          *  \return Return null
          */
-        void setReceiceWindowFirst(unsigned char channel, float frequency);
+        void setReceiveWindowFirst(unsigned char channel, float frequency);
         
         /**
-         *  \brief Set receice window 2 channel mapping
+         *  \brief Set receive window 2 channel mapping
          *  
          *  \param [in] frequency The frequency value of channel
          *  \param [in] dataRate The date rate value
          *  
          *  \return Return null
          */
-        void setReceiceWindowSecond(float frequency, _data_rate_t dataRate);
+        void setReceiveWindowSecond(float frequency, _data_rate_t dataRate);
         
         /**
-         *  \brief Set receice window 2 channel mapping
+         *  \brief Set receive window 2 channel mapping
          *  
          *  \param [in] frequency The frequency value of channel
          *  \param [in] spreadingFactor The spreading factor value
@@ -365,7 +365,7 @@ class LoRaWanClass
          *  
          *  \return Return null
          */
-        void setReceiceWindowSecond(float frequency, _spreading_factor_t spreadingFactor, _band_width_t bandwidth);
+        void setReceiveWindowSecond(float frequency, _spreading_factor_t spreadingFactor, _band_width_t bandwidth);
         
         /**
          *  \brief ON/OFF duty cycle limitation
@@ -386,14 +386,14 @@ class LoRaWanClass
         void setJoinDutyCycle(bool command);
         
         /**
-         *  \brief Set receice window delay
+         *  \brief Set receive window delay
          *  
          *  \param [in] command The delay type
          *  \param [in] _delay The delay value(millisecond)
          *  
          *  \return Return null
          */
-        void setReceiceWindowDelay(_window_delay_t command, unsigned short _delay);
+        void setReceiveWindowDelay(_window_delay_t command, unsigned short _delay);
         
         /**
          *  \brief Set LoRaWAN class type
