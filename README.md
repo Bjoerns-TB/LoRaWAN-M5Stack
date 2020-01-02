@@ -1,6 +1,8 @@
 # LoRaWAN-M5Stack
 LoRaWAN library for M5Stack LoRaWAN Module, based on the Seeeduino LoRaWAN library. This version works with The Things Network (TTN).
 
+Just replace the original files LoraWan.h and LoRaWan.cpp delivered by the M5Stack Library under M5Stack/src with the ones in the src directory.
+
 The lora.receivePacket function now also informs about the SNR.
 
     result = lora.transferPacketWithConfirmed(coords, sizeof(coords), 5);
