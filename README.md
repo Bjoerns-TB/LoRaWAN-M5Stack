@@ -59,4 +59,5 @@ Buffer overflow in sprintf() was fixed.
 
 Used UART has to be configured in LoRaWan.cpp
 
+Firmware 2.1.19 is mandatory for OTAA to work.
 The RHF76-052 with Firmware 2.1.19 performs the first JOIN with SF12, which will fail, an then switches to SF7.
