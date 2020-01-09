@@ -21,7 +21,7 @@ You have to change the LoRa serial to Serial1 in LoRaWan.h and LoRaWan.cpp
 
 #include <M5Stack.h>
 #include <TinyGPS++.h>
-#include "LoRaWan.h"
+#include <LoRaWan.h>
 
 //LoRa
 char buffer[256];
