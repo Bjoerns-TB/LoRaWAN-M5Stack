@@ -35,6 +35,7 @@
 #include <Arduino.h>
 
 #define SerialUSB   Serial
+//#define SerialLoRa  Serial1 //use this if GPS module is used
 #define SerialLoRa  Serial2
 
 #define _DEBUG_SERIAL_      1
