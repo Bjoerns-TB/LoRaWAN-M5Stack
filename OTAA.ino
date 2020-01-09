@@ -1,7 +1,7 @@
 
 
 #include <M5Stack.h>
-#include "LoRaWan.h"
+#include <LoRaWan.h>
 
 //LoRa
 char buffer[256];
