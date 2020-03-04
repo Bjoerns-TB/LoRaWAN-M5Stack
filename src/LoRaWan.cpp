@@ -44,8 +44,8 @@ LoRaWanClass::LoRaWanClass(void)
 
 void LoRaWanClass::init(void)
 {
-    //SerialLoRa.begin(9600, SERIAL_8N1, 2, 5);
-    SerialLoRa.begin(9600, SERIAL_8N1, 16, 17);
+    //SerialLoRa.begin(9600, SERIAL_8N1, 2, 5);		//2. serial Poret on module
+    SerialLoRa.begin(9600, SERIAL_8N1, 16, 17);		//1. serial Port on module
 }
 
 void LoRaWanClass::getVersion(char *buffer, short length, unsigned char timeout)
