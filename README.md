@@ -64,4 +64,4 @@ Used UART has to be configured in LoRaWan.cpp
 - Firmware 2.1.19 is mandatory for OTAA to work.
   The RHF76-052 with Firmware 2.1.19 performs the first JOIN with SF12, which will fail, an then switches to SF7.
   
-- setting the datarate with lora.setDataRate(DR5, EU868); will enable ADR and disable the DutyCycle check with formware 2.1.19
+- setting the datarate with lora.setDataRate(DR5, EU868); will enable ADR and disable the DutyCycle check with firmware 2.1.19
